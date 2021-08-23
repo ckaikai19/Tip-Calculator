@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Heebo', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+
+body{
+    background-image: url("rest.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    background-color: #AA2C75;
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "main footer footer"
+    "main header header"
+    ;
+
+    max-width: 500px;
+    box-shadow: 0px 7px 15px 3px #000000;
+}
+
+.part-1, .part-2, .part-3{
+    padding: 10px;
+    background-color: rgb(209, 209, 209);
+    margin: 2px;
+}
+
+
+.part-1{
+    text-align: center;
+    grid-area: main;
+    font-size: 12px;
+    color: #42132e;
+    border-radius: 3px;
+    font-weight: 500;
+}
+
+.part-2{
+    grid-area: footer;
+    display: flex;
+    justify-content: space-around;
+    background-color: #AA2C75;
+}
+
+.part-3{
+    grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    background-color: #671A46;
+    border-radius: 5px;
+}
+
+
+.bill-amount, .tip-precentage, .people{
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin-top: 5px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    border: none;
+    padding: 4px;
+}
+
+
+.title-1, .amount{
+    margin: 2px;
+    width: 100px;
+    color: white;
+    background-color: #AA2C75;
+}
+
+.title-2{
+    background-color: #671A46;
+    color: white;
+}
+
+.amount, .amount2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+#desc, #desc1{
+    letter-spacing: 5px;
+    font-weight: lighter;
+    margin-top: 35px;
+    background-color: #AA2C75;
+}
+
+#desc2, #desc3{
+    color: rgb(175, 175, 175);
+    background-color: #AA2C75;
+    font-style: italic;
+    font-size: 13px;
+}
+
+#desc1, #desc3{
+    background-color: #671A46;
+}
+
+.amount2{
+    background-color: #671A46;
+    color: white;
+}
+
+
+.people{
+    margin-bottom: 20px;
+}
+
+
+button{
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    background-color: #641b45;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+
+button:active{
+    background-color: #4b1434;
+}

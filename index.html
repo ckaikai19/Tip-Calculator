@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+
+            <div class="part-1">
+                BILL AMOUNT $
+                <input type="number" class="bill-amount" id="bill-amount" name="in" placeholder="$82.69">
+                TIP PERCENT %
+                <input type="number" class="tip-precentage" id="tip-precentage" placeholder="20%">
+                NUMBER OF PEOPLE
+                <input type="number" class="people" id="people"placeholder="6">
+                <button id="button">Enter</button>
+            </div>
+
+            <div class="part-2">
+                <div class="title-1">
+                    <h2 id="desc">TIP</h1>
+                    <p id="desc2">Per Person</p>
+                </div>
+                <div class="amount" id="tipAmount">$0.00</div>
+            </div>
+
+            <div class="part-3">
+                <div class="title-2">
+                    <h2 id="desc1">TOTAL</h1>
+                    <p id="desc3">Per Person</p>
+                </div>
+                <div class="amount2" id="tipTotal">$0.00</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="test.js"></script>
+</html>
